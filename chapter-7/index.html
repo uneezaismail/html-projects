@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch-7</title>
+    <style>
+        body{
+            width: 90%;
+            margin: auto;
+        }
+
+        input[type="text"],
+        input[type="email"]{
+width: 300px;
+        }
+
+        fieldset{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter # 7 - Forms</h1>
+    <fieldset>
+        <legend>Your Details:</legend>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" width="50">
+    <br>
+    <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>Your Reviews:</legend>
+        <br>
+        <label for="fruits">How did You hear about us?</label>
+        <select id="fruits" name="fruits">
+            <option value="apple">Google</option>
+            <option value="banana">Linkedin</option>
+            <option value="orange">Friend</option>
+            <option value="grape">youtube</option>
+        </select>
+        <br>
+        <br>
+        Would you visit again? <br>
+        <input type="radio" name="visitAgain" id="yes" value="yes"><label for="yes">Yes</label>
+        <input type="radio" name="visitAgain" id="no" value="no"><label for="no">No</label>
+        <input type="radio" name="visitAgain" id="maybe" value="maybe"><label for="maybe">Maybe</label>
+        <br>
+       <br>
+      Comments:
+      <br>
+       <textarea name="Comments" id="Comments" cols="35" rows="5"></textarea>
+       <br>
+       <br>
+       <input type="checkbox" name="check" id="check">
+       <label for="check">Sign me up for email updates</label>
+       <br>
+       <button>Submit review</button>
+    </fieldset>
+
+</body>
+</html>
